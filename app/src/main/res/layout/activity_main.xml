@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sobg2"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have Some Coffee :-)"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#290202"
+        />
+    <TextView
+        android:id="@+id/qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity :"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="25sp"
+        android:textColor="#290202"
+    />
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#290202"
+        android:text="+"
+        android:textColor="@color/white"
+        android:onClick="increment"
+        />
+    <EditText
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:drawableBottom="#290202"
+        android:hint="0"
+        android:textColor="#290202"
+        android:outlineSpotShadowColor="#290202"
+        android:background="@drawable/border"
+
+    />
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#290202"
+        android:text="-"
+        android:textColor="@color/white"
+        android:onClick="decrement"
+        />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:text="Your Bill:"
+            android:textSize="25sp"
+            android:textColor="#FF290202"
+
+            />
+        <TextView
+            android:id="@+id/bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:text="---"
+            android:textSize="25sp"
+            android:textColor="#FF290202"
+
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/billmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="#FF290202"
+
+        />
+    <Button
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#290202"
+        android:text="Order Now"
+        android:textColor="@color/white"
+        android:onClick="submitOrder"
+        />
+
+</LinearLayout>
